@@ -2,8 +2,8 @@
     --background: hsl(230, 17%, 14%);
     --top-background: hsl(232, 19%, 15%);
     --card-background: hsl(228, 28%, 20%);
-    --card-text-primary: hsl(228, 34%, 66%);
-    --card-text-seconardary:hsl(0, 0%, 100%);
+    --card-text-primary: hsl(0, 0%, 100%);
+    --card-text-seconardary:hsl(228, 34%, 66%);
 }
 
 .attribution {
@@ -17,7 +17,7 @@
 
 *{
     background-color: var(--background);
-    color: var(--card-text-seconardary);
+    color: var(--card-text-primary);
     font-size: 14px;
     font-family: 'Inter', sans-serif;
 }
@@ -58,7 +58,7 @@
 .handle{
     display: inline-flex;
     background-color: var(--card-background);
-    color: var(--card-text-primary);
+    color: var(--card-text-seconardary);
     font-weight: bold;
 }
 
@@ -71,7 +71,7 @@
 
 .followers{
     background-color: var(--card-background);
-    color: var(--card-text-primary);
+    color: var(--card-text-seconardary);
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     margin-bottom: 2rem;
