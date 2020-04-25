@@ -1,0 +1,104 @@
+:root{
+    --background: hsl(230, 17%, 14%);
+    --top-background: hsl(232, 19%, 15%);
+    --card-background: hsl(228, 28%, 20%);
+    --card-text-primary: hsl(228, 34%, 66%);
+    --card-text-seconardary:hsl(0, 0%, 100%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+*{
+    background-color: var(--background);
+    color: var(--card-text-seconardary);
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    margin: auto;
+    width: 70%;    
+    display: flex;
+    flex-direction: column;
+}
+
+.title-block{
+    background-color: var(--background);
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 5px;
+    padding: 2rem 0;
+}
+
+.title-text, .title-subtext, .theme-switcher{
+    background-color: var(--background);
+    width: 100%;
+    margin: auto;
+}
+
+.card{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card-background);
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 5px;
+    padding: 2rem 0;
+}
+
+.handle{
+    display: inline-flex;
+    background-color: var(--card-background);
+    color: var(--card-text-primary);
+    font-weight: bold;
+}
+
+.followers-num{
+    background-color:var(--card-background);
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.followers{
+    background-color: var(--card-background);
+    color: var(--card-text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.change{
+    background-color: var(--card-background);
+}
+
+.icon.facebook{
+    display: inline-flex;
+    align-self: center;    
+    background-image: url("/images/icon-facebook.svg");    
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 0.8rem;
+}
+
+.card.facebook{
+    border-top: 5px solid hsl(195, 100%, 50%);
+}
+
+.icon.up{
+    display: inline-flex;
+    background-image: url("/images/icon-up.svg");  
+    height: .3rem;
+    width: .5rem;
+    margin-right: 0.5rem;
+    background-color:var(--card-background) ;
+}
