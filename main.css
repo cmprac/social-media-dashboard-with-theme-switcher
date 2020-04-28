@@ -360,6 +360,11 @@
         grid-area: title2;
     }
 
+    .title-text, .title-subtext, .switch-block{
+        background-color: var(--background);
+        width: 100%;
+    }
+
     .switch-block{
         margin-top: 2em;
         display:block;
