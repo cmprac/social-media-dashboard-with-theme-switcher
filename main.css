@@ -183,7 +183,7 @@
 /* specific social meida */
 
 .card.facebook .social-media-icon, .icon.facebook{
-    background-image: url("./images/icon-facebook.svg");
+    background-image: url("images/icon-facebook.svg");
 }
 
 .card.facebook{
@@ -191,7 +191,7 @@
 }
 
 .card.twitter .social-media-icon, .icon.twitter{
-    background-image: url("/images/icon-twitter.svg");
+    background-image: url("images/icon-twitter.svg");
 }
 
 .card.twitter{
@@ -199,7 +199,7 @@
 }
 
 .card.instagram .social-media-icon, .icon.instagram{
-    background-image: url("/images/icon-instagram.svg");
+    background-image: url("images/icon-instagram.svg");
 }
 
 .card.instagram{    
@@ -214,7 +214,7 @@
 }
 
 .card.youtube .social-media-icon, .icon.youtube{
-    background-image: url("/images/icon-youtube.svg");
+    background-image: url("images/icon-youtube.svg");
 }
 
 .card.youtube{
@@ -224,7 +224,7 @@
 /* changes (up or down) */
 .icon.up{
     display: inline-flex;
-    background-image: url("/images/icon-up.svg");  
+    background-image: url("images/icon-up.svg");  
     height: .5rem;
     width: .5rem;
     margin-right: 0.5rem;
@@ -233,7 +233,7 @@
 
 .icon.down{
     display: inline-flex;
-    background-image: url("/images/icon-down.svg");  
+    background-image: url("images/icon-down.svg");  
     height: .5rem;
     width: .5rem;
     margin-right: 0.5rem;
