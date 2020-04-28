@@ -9,6 +9,7 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .attribution a {
@@ -83,7 +84,7 @@
 .slider.round{
     margin-left: auto;
     padding-right: 10%;
-    height: 2rem;
+    height: 2.1rem;
     flex: 0 0 60px;
     border-radius: 34px;
 }
@@ -182,7 +183,7 @@
 /* specific social meida */
 
 .card.facebook .social-media-icon, .icon.facebook{
-    background-image: url("/images/icon-facebook.svg");
+    background-image: url("./images/icon-facebook.svg");
 }
 
 .card.facebook{
@@ -244,11 +245,11 @@
     font-weight: bold;
 }
 
-.card-item.change.up{
+.card-item.change.up, .change.up{
     color: green;
 }
 
-.card-item.change.down{
+.card-item.change.down, .change.down{
     color: red;
 }
 
