@@ -74,9 +74,7 @@
 
 .switch-block{
     position: relative;
-    margin-top: 2em;
-    display: flex;
-    justify-content: flex-end;
+    display: flex;    
 }
 
 
@@ -332,7 +330,18 @@
     }
 
     .switch-block{
+        position: relative;
+        display: flex;    
         grid-area: switch;
+        align-content: flex-end;
+    }
+    .switch-text{
+        text-align: right;    
+    }
+
+    .switch{
+        width: 100px;
+        margin:0px;
     }
 
     .card.facebook{
@@ -365,14 +374,7 @@
         margin: auto;
     }
 
-    .switch-block{
-        margin-top: 2em;
-        display:block;
-    }
 
-    .switch-text{
-        text-align: right;    
-    }
 }
 
 
@@ -395,7 +397,18 @@
     }
 
     .switch-block{
+        position: relative;
+        display: flex;    
         grid-area: switch;
+        align-content: flex-end;
+    }
+    .switch-text{
+        text-align: right;    
+    }
+
+    .switch{
+        width: 100px;
+        margin:0px;
     }
 
     .card.facebook{
@@ -426,21 +439,5 @@
         background-color: var(--background);
         width: 98%;
         margin: auto;
-    }
-
-    .switch-block{
-        margin-top: 2em;
-        display:flex;
-        align-content: flex-end;
-    }
-
-    .switch-text{
-        margin-left: auto; 
-        width: auto;   
-        flex: 0 0 auto;
-    }
-    .switch{
-        width:50px;
-        margin: none;
     }
 }
