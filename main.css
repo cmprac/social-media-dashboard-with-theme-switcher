@@ -1,4 +1,12 @@
-:root, [data-theme="dark"]{
+:root, [data-theme="light"]{
+    --background: hsl(0, 0%, 100%);
+    --top-background:hsl(225, 100%, 98%);
+    --card-background: hsl(227, 47%, 96%);
+    --card-text-primary: hsl(228, 12%, 44%);
+    --card-text-seconardary:hsl(230, 17%, 14%);
+}
+
+[data-theme="dark"]{
     --background: hsl(230, 17%, 14%);
     --top-background: hsl(232, 19%, 15%);
     --card-background: hsl(228, 28%, 20%);
@@ -6,13 +14,6 @@
     --card-text-seconardary:hsl(228, 34%, 66%);
 }
 
-[data-theme="light"]{
-    --background: hsl(0, 0%, 100%);
-    --top-background:hsl(225, 100%, 98%);
-    --card-background: hsl(227, 47%, 96%);
-    --card-text-primary: hsl(228, 12%, 44%);
-    --card-text-seconardary:hsl(230, 17%, 14%);
-}
 
 .attribution {
   font-size: 11px;
@@ -72,7 +73,7 @@
 }
 
 .switch-block{
-    position: absolute;
+    position: relative;
     margin-top: 2em;
     display: flex;
     justify-content: flex-end;
@@ -83,17 +84,14 @@
 /************* Theme Switcher checkbox ********************/
 
 
-.switch{        
-    
+.switch{ 
     width: 100%;
     margin: auto;
 }
 
 .switch-text{
-    margin-right: auto ;
-    padding-left: 5%;
-    width: 100%;
-    flex: 4 1 250px;
+    margin-right: auto;
+    width: 100%;    
 }
 
 .slider.round{
@@ -102,22 +100,15 @@
     bottom: 0;
     margin-right: 10px;
     height: 2.1rem;
-    flex: 0 0 26px;
     border-radius: 34px;    
     min-width: 55px;
     width: 55px;
     margin-left: auto;
-}
-
-.slider {
-    position: absolute;
     cursor: pointer;
     background-image: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
     -webkit-transition: .4s;
     transition: .4s;
 }
-
-
   
 .slider:before {
     position: absolute;
@@ -297,10 +288,6 @@
     text-align: right;
 }
 
-.card-overview>.desc-num, .card-overview>.change{
-   
-}
-
 .card-overview>.desc-num{
     grid-area: num;
     background-color:var(--card-background);
@@ -333,7 +320,8 @@
         display: grid;
         grid-template-columns: repeat(1fr);
         grid-template-areas: 
-            'title title '
+            'title title'
+            'switch switch'
             'facebook twitter'
             'instagram youtube'
             'title2 title2';
@@ -341,6 +329,10 @@
 
     .title-block{
         grid-area: title;
+    }
+
+    .switch-block{
+        grid-area: switch;
     }
 
     .card.facebook{
@@ -391,6 +383,7 @@
         grid-template-columns: repeat(1fr);
         grid-template-areas: 
             'title title title title'
+            'switch switch switch switch'
             'facebook twitter instagram youtube'
             'title2 title2 title2 title2'
             'overview overview overview overview'
@@ -399,6 +392,10 @@
 
     .title-block{
         grid-area: title;
+    }
+
+    .switch-block{
+        grid-area: switch;
     }
 
     .card.facebook{
@@ -441,5 +438,9 @@
         margin-left: auto; 
         width: auto;   
         flex: 0 0 auto;
+    }
+    .switch{
+        width:50px;
+        margin: none;
     }
 }
