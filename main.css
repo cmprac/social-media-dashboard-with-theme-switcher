@@ -75,8 +75,12 @@
     position: absolute;
     margin-top: 2em;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
+
+
+
+/************* Theme Switcher checkbox ********************/
 
 
 .switch{        
@@ -92,8 +96,6 @@
     flex: 4 1 250px;
 }
 
-
-/************* Slider ********************/
 .slider.round{
     position: absolute;
     right: 0;
@@ -113,7 +115,9 @@
     background-image: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
     -webkit-transition: .4s;
     transition: .4s;
-  }
+}
+
+
   
 .slider:before {
     position: absolute;
@@ -134,14 +138,15 @@
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    transform: translateX(26px);    
     content: "";
     height: 1.8rem;
     width: 1.8rem;
     left: 2px;
     bottom: 2px;
   }
-   
+
+     
   .slider.round:before {
     border-radius: 50%;
   }
@@ -322,10 +327,66 @@
     grid-area: icon;
 }
 
-
-@media (min-width: 1080px){
+/****************** Medium sized screens **************/
+@media (min-width: 600px){
     .container{
-        max-width: 1440px;
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-areas: 
+            'title title '
+            'facebook twitter'
+            'instagram youtube'
+            'title2 title2';
+    }
+
+    .title-block{
+        grid-area: title;
+    }
+
+    .card.facebook{
+        grid-area: facebook;
+    }
+
+    .card.twitter{
+        grid-area: twitter;
+    }
+
+    .card.instagram{
+        grid-area: instagram;
+    }
+
+    .card.youtube{
+        grid-area: youtube;
+    }
+
+    .secondary-title{
+        grid-area: title2;
+    }
+
+    .title-subtext{
+        border-bottom: none;
+    }
+
+    .title-text, .title-subtext, .switch-block{
+        background-color: var(--background);
+        width: 95%;
+        margin: auto;
+    }
+
+    .switch-block{
+        margin-top: 2em;
+        display:block;
+    }
+
+    .switch-text{
+        text-align: right;    
+    }
+}
+
+
+/****************** Desktop **************/
+@media (min-width: 1080px){
+    .container{        
         display: grid;
         grid-template-columns: repeat(1fr);
         grid-template-areas: 
@@ -360,17 +421,25 @@
         grid-area: title2;
     }
 
+    .title-subtext{
+        border-bottom: none;
+    }
+
     .title-text, .title-subtext, .switch-block{
         background-color: var(--background);
-        width: 100%;
+        width: 98%;
+        margin: auto;
     }
 
     .switch-block{
         margin-top: 2em;
-        display:block;
+        display:flex;
+        align-content: flex-end;
     }
 
     .switch-text{
-        text-align: right;    
+        margin-left: auto; 
+        width: auto;   
+        flex: 0 0 auto;
     }
 }
