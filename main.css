@@ -165,7 +165,7 @@ input:checked + .slider.round{
     background-color: var(--card-background);
     color: var(--card-text-seconardary);
     font-weight: bold;
-    margin-left: 0.8rem;
+    padding-left: 0.8rem;
 }
 
 .followers-num{
